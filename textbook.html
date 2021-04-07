@@ -1,0 +1,2095 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Digital Library Twenty One</title>
+    <!-- Simple bar CSS -->
+    <link rel="stylesheet" href="css/simplebar.css">
+    <!-- Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="css/feather.css">
+    <!-- Date Range Picker CSS -->
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <!-- App CSS -->
+    <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+    <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled>
+  </head>
+  <body class="vertical  light  ">
+    <div class="wrapper">
+      <nav class="topnav navbar navbar-light">
+        <button type="button" class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar">
+          <i class="fe fe-menu navbar-toggler-icon"></i>
+        </button>
+        <form class="form-inline mr-auto searchform text-muted">
+          <input class="form-control mr-sm-2 bg-transparent border-0 pl-4 text-muted" disabled type="search" placeholder="Digital Library Twenty One" aria-label="Search">
+        </form>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-muted my-2" href="#" id="modeSwitcher" data-mode="light">
+              <i class="fe fe-sun fe-16"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted my-2" href="./#" data-toggle="modal" data-target=".modal-shortcut">
+              <span class="fe fe-grid fe-16"></span>
+            </a>
+          </li>
+          <li class="nav-item nav-notif">
+            <a class="nav-link text-muted my-2" href="./#" data-toggle="modal" data-target=".modal-notif">
+              <span class="fe fe-bell fe-16"></span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-muted pr-0" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="avatar avatar-sm mt-2">
+                <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Profil Perpustakaan</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <aside class="sidebar-left border-right bg-white shadow" id="leftSidebar" data-simplebar>
+        <a href="#" class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3" data-toggle="toggle">
+          <i class="fe fe-x"><span class="sr-only"></span></i>
+        </a>
+        <nav class="vertnav navbar navbar-light">
+          <!-- nav bar -->
+          <div class="w-100 mb-4 d-flex">
+            <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="./index.html">
+              <img src="assets/images/logo.png" style="width:50%">
+            </a>
+          </div>
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item dropdown">
+              <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                <i class="fe fe-home fe-16"></i>
+                <span class="ml-3 item-text">Beranda</span><span class="sr-only">(current)</span>
+              </a>
+              <ul class="collapse list-unstyled pl-4 w-100" id="dashboard">
+                <li class="nav-item active">
+                  <a class="nav-link pl-3" href="./index.html"><span class="ml-1 item-text">Digital Library</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="./index.html"><span class="ml-1 item-text">Online Public Access<br/>&nbsp;&nbsp;Catalog (OPAC)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="./index.html"><span class="ml-1 item-text">Pustakawan Cilik<br/>&nbsp;Biblio Club</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="./index.html"><span class="ml-1 item-text">Kartu Anggota</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="./index.html"><span class="ml-1 item-text">Layanan Internet<br/>&nbsp;Perpustakaan</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="./index.html"><span class="ml-1 item-text">Member Area</span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p class="text-muted nav-heading mt-4 mb-1">
+            <span>Buku Elektronik</span>
+          </p>
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item w-100">
+              <a class="nav-link" href="./literasidigital.html">
+                <i class="fe fe-book fe-16"></i>
+                <span class="ml-3 item-text">Literasi Digital</span>
+              </a>
+            </li>
+            <li class="nav-item w-100">
+              <a class="nav-link" href="ceritarakyat.html">
+                <i class="fe fe-book fe-16"></i>
+                <span class="ml-3 item-text">Cerita Rakyat</span>
+              </a>
+            </li>
+            <li class="nav-item w-100">
+              <a class="nav-link" href="textbook.html">
+                <i class="fe fe-book fe-16"></i>
+                <span class="ml-3 item-text">Buku Pelajaran<br/>(Textbook)</span>
+              </a>
+            </li>
+            <li class="nav-item w-100">
+              <a class="nav-link" href="infografis.html">
+                <i class="fe fe-book fe-16"></i>
+                <span class="ml-3 item-text">Infografis</span>
+              </a>
+            </li>
+            <li class="nav-item w-100">
+              <a class="nav-link" href="./klasik.html">
+                <i class="fe fe-book fe-16"></i>
+                <span class="ml-3 item-text">Buku Klasik</span>
+              </a>
+            </li>
+            <li class="nav-item w-100">
+              <a class="nav-link" href="./komik.html">
+                <i class="fe fe-book fe-16"></i>
+                <span class="ml-3 item-text">Komik</span>
+              </a>
+            </li>
+          </ul>
+          <p class="text-muted nav-heading mt-4 mb-1">
+            <span>Bantuan</span>
+          </p>
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item w-100">
+              <a class="nav-link" href="./bantuan.html">
+                <i class="fe fe-help-circle fe-16"></i>
+                <span class="ml-3 item-text">Bantuan</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main role="main" class="main-content">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="row align-items-center my-3">
+                <div class="col">
+                  <h2 class="page-title">Buku Pelajaran (Textbook)</h2>
+                </div>
+                <div class="col-auto">
+                  <a href="./internet.html"><button type="button" class="btn btn-outline-secondary"> <i class="fe fe-wifi fe-16"></i> Internet <span class="dot dot-md bg-success"></span></button></a>
+                  <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target=".modal-shortcut"><i class="fe fe-share-2 fe-16"></i></button>
+                </div>
+              </div>
+
+              <div class="file-container border-top">
+
+                <div class="mt-4">
+                  <h6 class="mb-3">Pendidikan Agama Islam dan Budi Pekerti</h6>
+
+                  <div class="row align-items-center mb-3 border-bottom no-gutters">
+                    <div class="col">
+                      <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Kelas VII</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-auto">
+                      <button type="button" class="btn btn-sm">
+                        <i class="fe fe-16 fe-grid text-muted"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm">
+                        <i class="fe fe-16 fe-list text-muted"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-deck mb-4">
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla1">
+                      <img src="./assets/books/Kelas VII Bab 01 - menuntut ilmu_Page_4_compress17.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Inspirasi Al-Qur'an untuk Menguasai Ilmu </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1EqY2w3SdseMNRRuPuKDWcyOZLI90xehW/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla2">
+                      <img src="./assets/books/Kelas VII Bab 02 - asmaulhusna_Page_4_compress60.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Meneladani Al-Asma' Al-Husna dalam Kehidupan Sehari-hari </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla2" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1ptbQm16o73nu0F55FMALlCT4VNMIIFD5/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla3">
+                      <img src="./assets/books/Kelas VII Bab 03 - jujuramanahistiqamah_Page_1_compress2.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Memupuk Sikap Jujur, Amanah dan Istikamah </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla3" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1Gcu1CoGyIJzyp6_Zito45YeDndTBPqx_/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla4">
+                      <img src="./assets/books/Kelas VII Bab 04 - hidupbersih_Page_4_compress49.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Pola Hidup Bersih Sesuai dengan Ketentuan Syariat Islam </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla4" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1MVjGfl9OtNh4evUHDn_1iizZ73o2yCVt/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla5">
+                      <img src="./assets/books/Kelas VII Bab 05 - shalatjamaah_Page_4_compress97.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Hidup Harmonis dengan Shalat Berjamaah </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla5" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1_oR_QSotMI3F8xEiZyozErioUoA-bwhG/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                  </div> <!-- .card-deck -->
+
+                  <div class="card-deck mb-4">
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla6">
+                      <img src="./assets/books/Kelas VII Bab 06 - mekah_Page_4_compress49.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Cahaya Islam di Mekah </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla6" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/13x_w_fyQ43LdGyyMhQEsbnGy-lE6l-O-/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla7">
+                      <img src="./assets/books/Kelas VII Bab 07 - ikhlassabarpemaaf_Page_4_compress97.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Inspirasi Al-Qur'an untuk Kebaikan Hidup </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla7" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1g_pHXif9W6FwHBj1thbJPUNZBOkDcgNr/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla8">
+                      <img src="./assets/books/Kelas VII Bab 08 - malaikat_Page_4_compress35.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Menjadi Pribadi yang Mawas Diri </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla8" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1AK7fwpb1k2mPM-wrwYP4KoZ3-jd2oeWy/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla9">
+                      <img src="./assets/books/Kelas VII Bab 09 - menghormatiempati_Page_4_compress75.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Menghormati Orang Tua dan Guru serta Menyayangi Sesama </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla9" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1dth9cBjDmCKu9zbWbDjs_nW8mpg851b6/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla10">
+                      <img src="./assets/books/Kelas VII Bab 10 - shalatjumat_Page_4_compress68.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Ketaatan dalam Persatuan Umat </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla10" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/13aWmzP0UqRRLFOiRsSzK3ews2GynQZjj/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                  </div> <!-- .card-deck -->
+
+                  <div class="card-deck mb-4">
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla11">
+                      <img src="./assets/books/Kelas VII Bab 11 - jamakqasar_Page_4_compress17.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Rukhsah (Kemudahan) dari Allah Swt. untuk Shalat Jamak Qasar </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla11" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1fzsRKA-5VPl2-CrrPVHhS-02Z_GNqHGx/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla12">
+                      <img src="./assets/books/Kelas VII Bab 12 - madinah_Page_4_compress54.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Hijrah ke Madinah Menuju Tatanan Masyarakat yang Beradab </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla12" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1nv1LR33jJeSKR_85iIYrJW0lyliJqV7-/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xla13">
+                      <img src="./assets/books/Kelas VII Bab 13 - khulafaurrasyidin_Page_4_compress4.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Meneladani Perjuangan dan Kepribadian Al-Khulafa' Ar-Rasyidun </strong>
+                              <p class="small text-muted mb-0">Kelas VII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xla13" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/13qUGj_atZvjTrBUOF720788H9CcTebSN/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card" style="opacity:0">
+                    </div>
+
+                    <div class="card" style="opacity:0">
+                    </div>
+
+
+                  </div> <!-- .card-deck -->
+
+
+
+
+                  <div class="row align-items-center mb-3 border-bottom no-gutters">
+                    <div class="col">
+                      <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Kelas VIII</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-auto">
+                      <button type="button" class="btn btn-sm">
+                        <i class="fe fe-16 fe-grid text-muted"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm">
+                        <i class="fe fe-16 fe-list text-muted"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-deck mb-4">
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb1">
+                      <img src="./assets/books/Kelas VIII Bab 01 - rendahhatihematsederhana_Page_4_compress49.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Al-Qur'an Menginspirasi: Hidup Bermartabat dengan Rendah Hati, Hemat, dan Sederhana </strong>
+                              <p class="small text-muted mb-0">Kelas VIIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1PV6xfz0CZnAbFrtG4-IEyV4Z3wr_EgDP/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb2">
+                      <img src="./assets/books/Kelas VIII Bab 02 - kitab_Page_4_compress92.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Meyakini Kitab-Kitab Allah, Menjadi Generasi yang Cinta Al-Qur'an </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb2" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1sSHmUodqrULrtcx0OIrLrguPcoMVLKzY/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb3">
+                      <img src="./assets/books/Kelas VIII Bab 03 - minumankerasjudipertengkaran_Page_4_compress34.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Mewujudkan Generasi Sehat dengan Menghindari Minuman Keras, Judi, dan Pertengkaran </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb3" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1wN30A9ldOr8KuGfqI4DItXPOF9nWdUnO/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb4">
+                      <img src="./assets/books/Kelas VIII Bab 04 - jujuradil_Page_4_compress75.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Menjadi Pribad Berintegritas dengan Perilaku Jujur dan Adil </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb4" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1vFHF4jCGFHai-xtoz94lPMe8LNfG6dxW/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb5">
+                      <img src="./assets/books/Kelas VIII Bab 05 - shalatsunah_Page_4_compress33.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Salat Sunah Berjamaah dan Munfarid: Semakin Dekat dengan Allah Swt. </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb5" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1iZ7lRbFb39nfhS6C06ko1KtbN2Weyvpm/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                  </div> <!-- .card-deck -->
+
+                  <div class="card-deck mb-4">
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb6">
+                      <img src="./assets/books/Kelas VIII Bab 06 - sujud_Page_4_compress78.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Menjadi remaja yang Rendah Hati dengan Sujud Syukur, Sujud Sahwi, dan Sujud Tilawah </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb6" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1TDVb2xK7PJHUQVyBehI_QzbRC2dyxV4s/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb7">
+                      <img src="./assets/books/Kelas VIII Bab 07 - umayyah_Page_4_compress13.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Meneladani Sejarah Pertumbuhan Ilmu Pengetahuan Masa Bani Umayyah </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb7" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1FsAhXgmRK0tTGK0co3Za_PJbHEibE3p3/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb8">
+                      <img src="./assets/books/Kelas VIII Bab 08 - halalbaik_Page_4_compress56.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Al-Qur'an Menginspirasi: menjadi generasi Sehat dengan Makanan dan Minuman yang halal dan Baik </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb8" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1ybLuk0ShrOdUAtmi-gGqpENXdK7TPLJZ/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb9">
+                      <img src="./assets/books/Kelas VIII Bab 09 - rasul_Page_4_compress96.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Meneladani Para Rasul Allah menjadi Generasi yang Berkarakter </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb9" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1NSfw_XslCAW42DuU1FZkPlaEwK0AuIFC/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb10">
+                      <img src="./assets/books/Kelas VIII Bab 10 - hormatpatuhorangtuaguru_Page_4_compress43.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Menjadi Remaja Mulia dengan Berbuat Baik, Hormat, dan Patuh Kepada Orang Tua dan Guru </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb10" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1-tTA1-LVK2E21Kr5FNypsNW2XFX8Gc8N/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                  </div> <!-- .card-deck -->
+
+                  <div class="card-deck mb-4">
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb11">
+                      <img src="./assets/books/Kelas VIII Bab 11 - amalsalehbaiksangka_Page_4_compress85.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Menjadi Pribadi yang Religius dan Peduli dengan Gemar Beramal Saleh dan berbaik Sangka </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb11" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1iYsLMjG0YwomCvkCzr6YtNMWPVIowM22/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb12">
+                      <img src="./assets/books/Kelas VIII Bab 12 - puasa_Page_4_compress41.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Membentuk Remaja Bertakqa Melalui Puasa Wajib dan Sunnah </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb12" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/10U1qY8owlrEz2-7JoSYy6UC4-QuJfdUO/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb13">
+                      <img src="./assets/books/Kelas VIII Bab 13 - halal_Page_4_compress84.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Hidup Sehat dan berkah dengan Makanan dan Minuman yang Halal </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb13" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1eIHJjEqej3SMHtLsPahnvkVkcuzaQ80g/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlb14">
+                      <img src="./assets/books/Kelas VIII Bab 14 - abbasiyah_Page_4_compress44.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Meneladani Ilmuwan Muslim Pada Masa Abbasiyah </strong>
+                              <p class="small text-muted mb-0">Kelas VIII</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlb14" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1U3uqYjMoQ0S_GbbATHrC8Gpn-JJa7rKX/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card" style="opacity:0">
+                    </div>
+
+
+                  </div> <!-- .card-deck -->
+
+                  <div class="row align-items-center mb-3 border-bottom no-gutters">
+                    <div class="col">
+                      <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Kelas IX</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-auto">
+                      <button type="button" class="btn btn-sm">
+                        <i class="fe fe-16 fe-grid text-muted"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm">
+                        <i class="fe fe-16 fe-list text-muted"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-deck mb-4">
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlc1">
+                      <img src="./assets/books/Kelas IX Bab 01 - optimisikhtiartawakal_Page_4_compress20.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Al-Qur'an Menginspirasi: Mari Meraih Kesuksesan dengan Optimis, Ihtiar, dan Tawakal </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1BousbGFMbM_VG_Y5mOQ-4sGNM69-avFW/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlc2">
+                      <img src="./assets/books/Kelas IX Bab 02 - hariakhir_Page_4_compress61.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Meyakini Hari Akhir dengan Mawas Diri, Menjauhi Kemaksiatan dan Kebiasaan Buruk </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc2" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1V0-hEPdioV6I_oJd9qKw3QK_2gJtg_Jk/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlc3">
+                      <img src="./assets/books/Kelas IX Bab 03 - jujurmenepatijanji_Page_4_compress2.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Mengasah Karakter Diri dengan Jujur dan Menepati Janji </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc3" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1oq69Zv2wYMzNY1nXB0PN9ofOKP7M8eHf/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlc4">
+                      <img src="./assets/books/Kelas IX Bab 04 - berbaktitaat_Page_4_compress54.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Menggapai Keberkahan Hidup dengan Berbakti dan Taat kepada Orang Tua dan Guru </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc4" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/18Cm-80lMd6GT99aZ-Z41UZI78PZnY35M/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlc5">
+                      <img src="./assets/books/Kelas IX Bab 05 - zakat_Page_4_compress25.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Zakat yang Membersihkan dan Menyejahterakan </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc5" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1lvHrd2U1xyjDRHlMRU0Y5uxHPfG5SobZ/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                  </div> <!-- .card-deck -->
+
+                  <div class="card-deck mb-4">
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlc6">
+                      <img src="./assets/books/Kelas IX Bab 06 - hajiumrah_Page_4_compress89.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Haji dan Umrah: Merekatkan Ukhuwah Islamiyah </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc6" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1f6iEsHZFT2COPbNEh3Ru8GnqTYV8Xt3V/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlc7">
+                      <img src="./assets/books/Kelas IX Bab 07 - islamnusantara_Page_4_compress48.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Kedamaian dalam Dakwah Islam di Nusantara </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc7" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1lSJgH3_W0CSNHGRUK29GdPtCnkuap-lY/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlc8">
+                      <img src="./assets/books/Kelas IX Bab 08 - toleransi_Page_4_compress46.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Al-Qur'an Menginspirasi: Mari Mengokohkan Persatuan dengan Toleransi dan menghargai Perbedaan </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc8" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1F9andkxN-Nyua49un5zyr03SFuvVb2cb/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlc9">
+                      <img src="./assets/books/Kelas IX Bab 09 - qadaqadar_Page_4_compress3.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Meraih Ketenangan Jiwa dengan Meyakini Qada dan Qadar </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc9" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1xniyPESq4bNHci6RfILxVNOu59aZCuuo/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlc10">
+                      <img src="./assets/books/Kelas IX Bab 10  simpatiktatakramasopan_Page_4_compress46.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Menjadi Pribadi Simpatik dengan Tata Krama, Sopan Santun, dan Menjaga Rasa Malu </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc10" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1nBs3tyYWg548f145YILupUdaNN-ZFgJG/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                  </div> <!-- .card-deck -->
+
+                  <div class="card-deck mb-4">
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlc11">
+                      <img src="./assets/books/Kelas IX Bab 11 - qurban_Page_4_compress87.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Syariat Penyembelihan Hewan agar Menghasilkan Daging yang Sehat dan Halal </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc11" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/18NaXL8R-0VkvDWvPxETNwAm0w1I9RWOy/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlc12">
+                      <img src="./assets/books/Kelas IX Bab 12 - aqiqah_Page_4_compress28.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Bersyukur dengan Akikah, Peduli Sesama dengan Berkurban </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc12" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1tJILQ2E6vxPLFTkcMF1ruStZ8-klPjkR/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card shadow mb-4 file-list" data-toggle="modal" data-target=".modal-xlcb13">
+                      <img src="./assets/books/Kelas IX Bab 13 - tradisiislamnusantara_Page_4_compress73.jpg" alt="..." class="card-img-top img-fluid rounded">
+                      <div class="card-footer">
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-auto">
+                            <div class="card-text my-2">
+                              <strong class="card-title my-0">Menghargai Tradisi Islam di Nusantara </strong>
+                              <p class="small text-muted mb-0">Kelas IX</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade modal-xlc13" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="nav-item dropdown">
+                                <span class="avatar avatar-sm mt-2">
+                                  <img src="./assets/images/logo.png" alt="..." class="avatar-img rounded-circle">
+                                </span>
+                                &nbsp;Perpustakaan SMPN 21 Purworejo
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1-jEbj-LUv3w0A3Eyajyim5QiQQdDUnrT/preview" width="100%" height="480"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn mb-2 btn-primary" data-dismiss="modal" data-toggle="modal" data-target=".modal-xl3">Ebook Selanjutnya</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- large modal -->
+
+                    <div class="card" style="opacity:0">
+                    </div>
+
+                    <div class="card" style="opacity:0">
+                    </div>
+
+
+                  </div> <!-- .card-deck -->
+
+
+                </div> <!-- .file-panel -->
+                <div class="info-panel">
+                  <div class="info-content p-3 border-left">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="flex-fill">
+                        <span class="circle circle-sm bg-white mr-2">
+                          <span class="fe fe-image fe-12 text-success"></span>
+                        </span>
+                        <span class="h6">Creative Logo.PNG</span>
+                      </div>
+                      <span class="btn close-info">
+                        <i class="fe fe-x"></i>
+                      </span>
+                    </div>
+                    <ul class="nav nav-tabs nav-fill mb-3" id="file-detail" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="tab-detail" data-toggle="tab" href="#detail" role="tab" aria-controls="detail" aria-selected="true">Details</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="tab-activity" data-toggle="tab" href="#activity" role="tab" aria-controls="activity" aria-selected="false">Activities</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="file-tabs">
+                      <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="tab-detail">
+                        <img src="./assets/products/p4.jpg" alt="..." class="img-fluid rounded">
+                        <ul class="avatars-list my-4 mx-0">
+                          <li>
+                            <a href="#!" class="avatar avatar-sm">
+                              <img alt="..." class="avatar-img rounded-circle" src="./assets/avatars/face-2.jpg">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#!" class="avatar avatar-sm">
+                              <img alt="..." class="avatar-img rounded-circle" src="./assets/avatars/face-4.jpg">
+                            </a>
+                          </li>
+                        </ul>
+                        <dl class="row my-4 small">
+                          <dt class="col-6 text-muted">Owner</dt>
+                          <dd class="col-6">Whilemina Pate</dd>
+                          <dt class="col-6 text-muted">Type</dt>
+                          <dd class="col-6">Image</dd>
+                          <dt class="col-6 text-muted">Size</dt>
+                          <dd class="col-6">32M</dd>
+                          <dt class="col-6 text-muted">Location</dt>
+                          <dd class="col-6"><a href="#" class="text-muted">Design File</a></dd>
+                          <dt class="col-6 text-muted">Created at</dt>
+                          <dd class="col-6">Aug 20, 2020</dd>
+                          <dt class="col-6 text-muted">Last update</dt>
+                          <dd class="col-6">Aug 21, 2020</dd>
+                        </dl>
+                      </div> <!-- .tab-pane -->
+                      <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="tab-activity">
+                        <div class="timeline">
+                          <div class="pb-3 timeline-item item-primary">
+                            <div class="pl-5 small">
+                              <div class="mb-1"><strong>@Brown Asher</strong><span class="text-muted mx-1">have uploaded</span><strong>Tinydash</strong></div>
+                              <span class="badge badge-pill badge-dark">1h ago</span>
+                            </div>
+                          </div>
+                          <div class="pb-3 timeline-item item-warning">
+                            <div class="pl-5 small">
+                              <div class="mb-3"><strong>@Fletcher</strong><span class="text-muted mx-1">shared</span><strong>Tiny Admin</strong></div>
+                              <ul class="avatars-list mb-2">
+                                <li>
+                                  <a href="#!" class="avatar avatar-sm">
+                                    <img alt="..." class="avatar-img rounded-circle" src="./assets/avatars/face-1.jpg">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#!" class="avatar avatar-sm">
+                                    <img alt="..." class="avatar-img rounded-circle" src="./assets/avatars/face-4.jpg">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#!" class="avatar avatar-sm">
+                                    <img alt="..." class="avatar-img rounded-circle" src="./assets/avatars/face-3.jpg">
+                                  </a>
+                                </li>
+                              </ul>
+                              <span class="badge badge-pill badge-dark">1h ago</span>
+                            </div>
+                          </div>
+                          <div class="pb-3 timeline-item item-success">
+                            <div class="pl-5 small">
+                              <div class="mb-2"><strong>@Kelley Sonya</strong><span class="text-muted small mx-1">has commented on</span><strong>Advanced table</strong></div>
+                              <div class="card d-inline-flex mb-2">
+                                <div class="card-body bg-light py-2 px-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                              </div>
+                              <span class="badge badge-pill badge-dark">1h ago</span>
+                            </div>
+                          </div>
+                        </div> <!-- / .timeline -->
+                      </div> <!-- .tab-pane -->
+                    </div> <!-- .tab-content -->
+                  </div>
+                </div>
+              </div> <!-- .file-container -->
+            </div> <!-- .col -->
+          </div> <!-- .row -->
+        </div> <!-- .container-fluid -->
+        <div class="modal fade modal-notif modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="defaultModalLabel">Notifications</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="list-group list-group-flush my-n3">
+                  <div class="list-group-item bg-transparent">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <span class="fe fe-box fe-24"></span>
+                      </div>
+                      <div class="col">
+                        <small><strong>Package has uploaded successfull</strong></small>
+                        <div class="my-0 text-muted small">Package is zipped and uploaded</div>
+                        <small class="badge badge-pill badge-light text-muted">1m ago</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-transparent">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <span class="fe fe-download fe-24"></span>
+                      </div>
+                      <div class="col">
+                        <small><strong>Widgets are updated successfull</strong></small>
+                        <div class="my-0 text-muted small">Just create new layout Index, form, table</div>
+                        <small class="badge badge-pill badge-light text-muted">2m ago</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-transparent">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <span class="fe fe-inbox fe-24"></span>
+                      </div>
+                      <div class="col">
+                        <small><strong>Notifications have been sent</strong></small>
+                        <div class="my-0 text-muted small">Fusce dapibus, tellus ac cursus commodo</div>
+                        <small class="badge badge-pill badge-light text-muted">30m ago</small>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="list-group-item bg-transparent">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <span class="fe fe-link fe-24"></span>
+                      </div>
+                      <div class="col">
+                        <small><strong>Link was attached to menu</strong></small>
+                        <div class="my-0 text-muted small">New layout has been attached to the menu</div>
+                        <small class="badge badge-pill badge-light text-muted">1h ago</small>
+                      </div>
+                    </div>
+                  </div> <!-- / .row -->
+                </div> <!-- / .list-group -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Clear All</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade modal-shortcut modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="defaultModalLabel">Shortcuts</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body px-5">
+                <div class="row align-items-center">
+                  <div class="col-6 text-center">
+                    <div class="squircle bg-success justify-content-center">
+                      <i class="fe fe-cpu fe-32 align-self-center text-white"></i>
+                    </div>
+                    <p>Control area</p>
+                  </div>
+                  <div class="col-6 text-center">
+                    <div class="squircle bg-primary justify-content-center">
+                      <i class="fe fe-activity fe-32 align-self-center text-white"></i>
+                    </div>
+                    <p>Activity</p>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-6 text-center">
+                    <div class="squircle bg-primary justify-content-center">
+                      <i class="fe fe-droplet fe-32 align-self-center text-white"></i>
+                    </div>
+                    <p>Droplet</p>
+                  </div>
+                  <div class="col-6 text-center">
+                    <div class="squircle bg-primary justify-content-center">
+                      <i class="fe fe-upload-cloud fe-32 align-self-center text-white"></i>
+                    </div>
+                    <p>Upload</p>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-6 text-center">
+                    <div class="squircle bg-primary justify-content-center">
+                      <i class="fe fe-users fe-32 align-self-center text-white"></i>
+                    </div>
+                    <p>Users</p>
+                  </div>
+                  <div class="col-6 text-center">
+                    <div class="squircle bg-primary justify-content-center">
+                      <i class="fe fe-settings fe-32 align-self-center text-white"></i>
+                    </div>
+                    <p>Settings</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main> <!-- main -->
+    </div> <!-- .wrapper -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simplebar.min.js"></script>
+    <script src='js/daterangepicker.js'></script>
+    <script src='js/jquery.stickOnScroll.js'></script>
+    <script src="js/tinycolor-min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/topojson.min.js"></script>
+    <script src="js/datamaps.all.min.js"></script>
+    <script src="js/datamaps-zoomto.js"></script>
+    <script src="js/datamaps.custom.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script>
+      /* defind global options */
+      Chart.defaults.global.defaultFontFamily = base.defaultFontFamily;
+      Chart.defaults.global.defaultFontColor = colors.mutedColor;
+    </script>
+    <script src="js/gauge.min.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/apexcharts.min.js"></script>
+    <script src="js/apexcharts.custom.js"></script>
+    <script src="js/apps.js"></script>
+  </body>
+</html>
