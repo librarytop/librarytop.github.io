@@ -1768,7 +1768,7 @@ textarea.form-control {
       margin-bottom: 0; }
     .form-inline .form-control {
       display: inline-block;
-      width: auto;
+      width: 250px;
       vertical-align: middle; }
     .form-inline .form-control-plaintext {
       display: inline-block; }
@@ -2055,8 +2055,8 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(27, 104, 255, 0.5); }
 
 .btn-outline-secondary {
-  color: #6c757d;
-  border-color: #6c757d; }
+  color: #ced4da;
+  border-color: #ced4da; }
   .btn-outline-secondary:hover {
     color: #ffffff;
     background-color: #6c757d;
